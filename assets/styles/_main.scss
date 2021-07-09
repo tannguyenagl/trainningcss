@@ -1,0 +1,557 @@
+.c-topstaff {
+  padding-bottom: 40px;
+  background-image: linear-gradient(to right, #008870, #003544);
+  position: relative;
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+  }
+  &__wrap {
+    display: flex;
+    position: relative;
+
+    padding-top: calc(100% * (429 / 1366));
+  }
+  &_slogan {
+    position: absolute;
+    bottom: 15px;
+    line-height: 69px;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 48px;
+    color: #e3dfb9;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 9px;
+    bottom: 10px;
+  }
+}
+.c-topmain {
+  padding-bottom: 100px;
+  &__text {
+    margin: auto;
+    text-align: center;
+    margin-top: 53px;
+    margin-bottom: 75px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
+    color: #333333;
+    font-weight: 400;
+    height: 84px;
+    line-height: 29px;
+    letter-spacing: 1.5px;
+    line-height: 28px;
+  }
+}
+
+.c-services {
+  display: flex;
+  padding-left: 0px 82px;
+  padding: 0px 82px;
+  letter-spacing: 2px;
+
+  margin-bottom: 80px;
+
+  &__text {
+    margin-top: 23px;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #004442;
+    margin-bottom: 52px;
+  }
+  &__itemcen {
+    margin: 0px 28px;
+  }
+  &__item {
+    position: relative;
+  }
+  &__subdirect {
+    padding: 0px 106px !important;
+  }
+}
+.c-services__right {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.c-btnche {
+  padding-left: 42px;
+  padding-bottom: 8px;
+  border-bottom: 4px solid #c9c393;
+  width: max-content;
+
+  display: flex;
+  color: #004442;
+  align-items: center;
+  &__text {
+    margin-right: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Noto Serif JP', serif;
+    line-height: 23px;
+  }
+  &__wrapicon {
+    display: flex;
+  }
+}
+
+.drop {
+  &:hover,
+  &:focus {
+    box-shadow: inset -90vw 0 0 0 #41c7af;
+  }
+}
+.subdirect {
+  position: relative;
+  margin: auto;
+  height: 64px;
+  text-align: center;
+  background-image: linear-gradient(to right, #008870, #003544);
+  display: flex;
+  align-items: center;
+  border-radius: 32px;
+  transition: 2s;
+  cursor: pointer;
+  width: max-content;
+  padding: 0px 127px;
+  &:hover {
+    opacity: 1;
+    .subdirect__wrapicon {
+      color: white;
+    }
+  }
+  @extend .drop;
+  &__wrapicon {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 24px;
+    color: #c9c393;
+    transform: translateY(-50%);
+    height: 24px;
+    transition: 1s;
+  }
+  &__text {
+    line-height: 24px;
+    letter-spacing: 1px;
+
+    margin: auto;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+  }
+}
+
+.c-aboutwork {
+  height: max-content;
+  background: #f6faf5;
+  padding-top: 90px;
+  padding-bottom: 100px;
+  &__item {
+    position: relative;
+    padding-top: calc(100% * (477 / 1366));
+    height: 100%;
+    min-height: 378px;
+  }
+  &__item1 {
+    margin-top: 84px;
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__wrapimg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: calc(100% * (771 / 1366));
+    min-height: 378px;
+    min-width: 610px;
+  }
+  &__detail {
+    position: absolute;
+    top: 50%;
+    right: calc(83 / 1366 * 100%);
+    padding: 51px 60px 60px 60px;
+    background: #e3dfb9;
+    transform: translateY(-50%);
+    width: calc(687 / 1366 * 100%);
+    max-height: 100%;
+    min-height: 378px;
+    min-width: 545px;
+  }
+  &__title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #004442;
+    letter-spacing: 1px;
+    margin-bottom: 47px;
+  }
+  &__sub {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  &__btnche {
+    margin-left: auto;
+  }
+  &__wrapimg2 {
+    left: unset;
+    right: 0px;
+  }
+
+  &__detail2 {
+    right: unset;
+    left: calc(83 / 1366 * 100%);
+  }
+
+  &__item2 {
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+}
+
+.c-voicemain {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-bottom: 80px;
+  padding-top: 90px;
+  &__prev {
+    margin-right: 40px;
+  }
+  &__next {
+    margin-left: 40px;
+  }
+  &__control {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: max-content;
+  }
+  &__listdot {
+    position: relative;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  &__wrapimg {
+    width: 277px;
+    height: 172px;
+  }
+  &__listbtn {
+    display: flex;
+    margin: 0px -5px;
+    margin-top: 22px;
+  }
+  &__btn {
+    margin: 0px 5px;
+    line-height: 20px;
+    color: #004442;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Noto Sans JP', sans-serif;
+    border: 1px #004442 solid;
+    border-radius: 12px;
+    padding: 0px 20px 3px 20px;
+  }
+  &__linesub {
+    margin-top: 14px;
+    display: flex;
+    margin-left: -2px;
+    align-items: center;
+  }
+  &__text {
+    margin-left: 2px;
+    line-height: 18px;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &__slide {
+    margin-bottom: 54px !important;
+    margin-top: 70px;
+  }
+  &__subdirect {
+    margin-top: 73px;
+  }
+}
+
+.c-circle {
+  width: 18px;
+  height: 18px;
+  border: 1px solid;
+  border-radius: 50%;
+  margin: 0px 2px;
+}
+
+.c-wrapchevron {
+  font-size: 24px;
+  color: #e3dfb9;
+  height: 24px;
+  line-height: 24px;
+}
+
+.slick-dots {
+  position: unset !important;
+}
+.c-voicemain__listdot .slick-dots li {
+  list-style-type: none;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #7c621b;
+  border-radius: 50%;
+}
+
+.c-voicemain__listdot .slick-dots li button {
+  display: none;
+}
+
+.c-voicemain__listdot .slick-active {
+  background-color: #7c621b;
+}
+
+.c-condominium {
+  background: #f6faf5;
+  padding: 88px 82px 100px 82px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__wrapimg {
+    width: 380px;
+    height: 235px;
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  &__item {
+    width: 380px;
+    max-width: 100%;
+    padding-bottom: 40px;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+  }
+  &__title {
+    margin-top: 22px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    line-height: 45px;
+  }
+  &__sub {
+    margin-top: 2px;
+    font-size: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  &__subdirect {
+    margin-top: 80px;
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    align-items: center;
+  }
+  &__date {
+    font-size: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 1px;
+  }
+  &__action {
+    font-size: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: #004442;
+    line-height: 20px;
+    height: 24px;
+    background: #c9c393;
+    border-radius: 12px;
+    padding: 0px 16.5px;
+    line-height: 24px;
+  }
+}
+
+.c-faq {
+  padding-top: 90px;
+  padding-bottom: 100px;
+  &__listquest {
+    margin-top: 60px;
+    border: 2xp solid;
+    border: solid 2px #7c621b;
+    border-radius: 30px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    width: 100%;
+    max-width: 995px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__questitem {
+    display: flex;
+    width: max-content;
+    align-items: center;
+  }
+  &__wrapicon {
+    margin-right: 10px;
+    color: #004442;
+    font-size: 24px;
+    line-height: 24px;
+    height: 24px;
+  }
+  &__wrapitem {
+    width: max-content;
+    margin: auto;
+  }
+  &__quest {
+    color: #333333;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 0.8px;
+    line-height: 48px;
+  }
+  &__subcontent {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #333333;
+    margin-top: 54px;
+    margin-bottom: 56px;
+    line-height: 26px;
+    letter-spacing: 1px;
+  }
+}
+
+.c-footer {
+  padding-top: 90px;
+  color: white;
+  background: #004442;
+  &__wrapiconright {
+    display: none;
+  }
+  &__contact {
+    display: flex;
+    padding: 0px 67px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+  }
+  &__wrapmail {
+    font-size: 24px;
+    font-weight: 400;
+    margin-right: 10px;
+    height: 20px;
+    line-height: 20px;
+  }
+  &__text {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    height: 24px;
+    margin-right: 10px;
+  }
+  &__subtext {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    height: 16px;
+    letter-spacing: 1px;
+  }
+  &__subslogan {
+    color: white;
+  }
+  &__subdirect {
+    flex: 1;
+    margin: 0px 16px;
+    background-image: linear-gradient(to right, #ae934a, #7c7a1b);
+    padding: 0px;
+    min-width: 400px;
+    margin-top: 47px;
+  }
+  &__subdirect2 {
+    flex: 1;
+
+    margin: 0px 16px;
+    margin-top: 47px;
+    min-width: 400px;
+
+    background-image: linear-gradient(to right, #ffffff, #e3dfb9);
+  }
+  &__wrapdirect {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    margin: auto;
+  }
+  &__wrapdirect2 {
+    color: #004442;
+  }
+  &__bottom {
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to right, #ae934a, #7c7a1b);
+    display: flex;
+    padding: 0px 30px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+  &__imglogo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__logomini {
+    width: 228px;
+    height: 34px;
+    margin-right: 63px;
+  }
+  &__navitem {
+    margin-right: 28px;
+    letter-spacing: 1px;
+    color: white;
+  }
+  &__signature {
+    margin-left: auto;
+    letter-spacing: 0.7px;
+  }
+}

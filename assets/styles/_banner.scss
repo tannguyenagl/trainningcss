@@ -1,0 +1,52 @@
+$bgbanner: url('../img/backgroundslide.png');
+$mobile-width: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+.c-banner {
+  background-image: $bgbanner;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 768px;
+  position: relative;
+  overflow: hidden;
+  @include mobile {
+    overflow: unset;
+  }
+  &__slogan {
+    position: absolute;
+    left: 0px;
+    overflow-y: hidden;
+    top: 216px;
+    @include mobile {
+      z-index: 4;
+      top: 575px;
+    }
+  }
+  &__staffgirl {
+    width: 300px;
+    height: 536px;
+    position: absolute;
+    right: 366px;
+    bottom: 0px;
+    z-index: 2;
+    &--img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__staffmen {
+    width: 313px;
+    height: 634px;
+    position: absolute;
+    right: 87px;
+    bottom: -3px;
+  }
+}

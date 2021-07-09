@@ -1,0 +1,46 @@
+.c-slogan {
+  color: white;
+  padding: 45px 102px 45px 82px;
+  background-image: linear-gradient(to right, #008870, #003544);
+  border-radius: 0px 30px 30px 0px;
+  opacity: 0.95;
+  font-family: 'Noto Serif JP', serif;
+  &__title1 {
+    font-size: 70px;
+
+    height: 88px;
+    line-height: 88px;
+    font-weight: 600;
+  }
+  &__title {
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    letter-spacing: 3.2px;
+  }
+  &__title2 {
+    font-size: 70px;
+    height: 88px;
+    line-height: 67px;
+    color: #e3dfb9;
+    font-weight: 600;
+  }
+  &__item {
+    align-items: center;
+    display: flex;
+    line-height: 34px;
+    &--text {
+      letter-spacing: 2px;
+    }
+  }
+  &__missions {
+    margin-top: 8px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  &__wrapicon {
+    color: #e3dfb9;
+    margin-right: 10px;
+  }
+}

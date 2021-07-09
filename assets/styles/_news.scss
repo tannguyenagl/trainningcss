@@ -1,0 +1,84 @@
+$mobile-width: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+.c-news {
+  padding-top: 48px;
+  padding-bottom: 78px;
+  width: 789px;
+  max-width: 100%;
+  margin: auto;
+  @include mobile {
+    margin-top: 205px;
+  }
+  &__tittle {
+    display: flex;
+    margin-bottom: 88px;
+    width: 100%;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-bottom: 16px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 0.7px;
+    border-bottom: 4px solid #e3dfb9;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333333;
+  }
+  &__content {
+    text-align: center;
+  }
+  &__tit1 {
+    margin-right: 34px;
+  }
+  &__tit2 {
+    margin-right: 19px;
+  }
+  &__tit3 {
+    padding: 3px 28px;
+    border-radius: 12px;
+    background: #7c621b;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    margin-right: 19px;
+  }
+  &__sub {
+    max-width: 100%;
+    margin: auto;
+    color: #333333;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 43px;
+  }
+  &__slogan {
+    line-height: 51px;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 23px;
+    letter-spacing: 2px;
+  }
+
+  &__wrapicon {
+    margin-left: auto;
+    font-size: 16px;
+    color: #004442;
+  }
+}
+
+.c-line__center {
+  background: #7c621b;
+  height: 4px;
+  width: 80px;
+  margin: auto;
+}

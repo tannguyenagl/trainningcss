@@ -1,0 +1,93 @@
+.c-banner {
+  &__top {
+    padding-top: calc(100% * 450 / 1366);
+    position: relative;
+    min-height: 300px;
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+  }
+}
+.c-faqpage {
+  &__breadcumb {
+    padding-top: 25px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  &__list {
+    margin-top: 98px;
+    width: 798px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-bottom: 100px;
+    max-width: 100%;
+    border-bottom: 1px #7c621b solid;
+  }
+  &__title {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 25px 30px;
+    border-top: 1px #7c621b solid;
+  }
+  &__tit {
+    display: flex;
+    line-height: 28px;
+    letter-spacing: 1px;
+    width: 100%;
+  }
+  &__index {
+    margin-right: 10px;
+  }
+  &__cross {
+    width: 16px;
+    height: 2px;
+    background-color: #7c621b;
+    position: relative;
+  }
+  &__data {
+    width: 100%;
+  }
+  &__content {
+    color: #7c621b;
+    border-top: 1px #e3dfb9 solid;
+
+    .c-faqpage__tittext {
+      max-width: 657px;
+    }
+  }
+}
+
+.c-breadcumb {
+  display: flex;
+  align-items: center;
+  color: #333333;
+  &__text {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+  &__seperate {
+    font-size: 14px;
+    color: #7c621b;
+    margin: 0px 10px;
+    line-height: 14px;
+    height: 14px;
+  }
+}
+
+.c-cross__column {
+  position: absolute;
+  width: 2px;
+  height: 16px;
+  background: #7c621b;
+  top: -6px;
+  left: 7px;
+}

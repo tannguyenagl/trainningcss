@@ -1,0 +1,68 @@
+$header-width: 1278px;
+$mobile-width: 768px;
+
+@mixin header {
+  @media (max-width: #{$header-width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+.c-topnav {
+  display: flex;
+  margin-right: 14px;
+  letter-spacing: 1.5px;
+  &__item {
+    padding: 0px 14px;
+  }
+  @include header {
+    font-size: 12.5px;
+    padding: 0px 5px;
+  }
+}
+.c-btn {
+  &__contact {
+    display: flex;
+    padding: 25px 30px;
+    background-image: linear-gradient(to right, #008870, #003544);
+    align-items: center;
+    height: 80px;
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
+    @include header {
+      font-size: 14px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  &__wrapicon {
+    margin-right: 10px;
+  }
+}
+
+.c-logo {
+  display: flex;
+  padding: 18px 30px;
+  width: 291px;
+  box-sizing: content-box;
+  @include header {
+    padding-right: 0px;
+    width: 150px;
+  }
+  @include mobile {
+    width: 493px;
+    max-width: 100%;
+    padding-right: 30px;
+    max-width: calc(100% - 180px);
+  }
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+}
