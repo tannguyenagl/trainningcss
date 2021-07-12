@@ -1,10 +1,3 @@
-$mobile-width: 768px;
-
-@mixin mobile {
-  @media (max-width: #{$mobile-width}) {
-    @content;
-  }
-}
 .c-news {
   padding-top: 48px;
   padding-bottom: 78px;
@@ -12,7 +5,7 @@ $mobile-width: 768px;
   max-width: 100%;
   margin: auto;
   @include mobile {
-    margin-top: 205px;
+    padding-bottom: 45px;
   }
   &__tittle {
     display: flex;
@@ -30,15 +23,34 @@ $mobile-width: 768px;
     font-size: 16px;
     font-weight: 700;
     color: #333333;
+    @include mobile {
+      padding-left: 15px;
+      padding-right: 15px;
+      flex-wrap: wrap;
+      font-size: 11px;
+      margin-bottom: 10px;
+    }
   }
   &__content {
     text-align: center;
+    @include mobile {
+      padding: 0px 20px;
+    }
   }
   &__tit1 {
     margin-right: 34px;
+    @include mobile {
+      margin: 0px;
+      font-size: 18px;
+      width: 100%;
+      text-align: center;
+    }
   }
   &__tit2 {
     margin-right: 19px;
+    @include mobile {
+      margin-right: 5px;
+    }
   }
   &__tit3 {
     padding: 3px 28px;
@@ -49,6 +61,11 @@ $mobile-width: 768px;
     line-height: 20px;
     font-weight: 700;
     margin-right: 19px;
+    @include mobile {
+      font-size: 11px;
+      padding: 0px 5px;
+      margin-right: 5px;
+    }
   }
   &__sub {
     max-width: 100%;
@@ -59,6 +76,10 @@ $mobile-width: 768px;
     font-weight: 400;
     letter-spacing: 1px;
     margin-top: 43px;
+    @include mobile {
+      font-size: 14px;
+      margin-top: 10px;
+    }
   }
   &__slogan {
     line-height: 51px;
@@ -67,12 +88,29 @@ $mobile-width: 768px;
     font-weight: 600;
     margin-bottom: 23px;
     letter-spacing: 2px;
+    @include mobile {
+      font-size: 24px;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
   }
 
   &__wrapicon {
     margin-left: auto;
     font-size: 16px;
     color: #004442;
+  }
+  &__tit4 {
+    @include mobile {
+      min-width: 150px;
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-all;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
   }
 }
 

@@ -27,9 +27,20 @@
     width: 100%;
     letter-spacing: 9px;
     bottom: 10px;
+    @include mobile {
+      font-size: 25px;
+      line-height: unset;
+    }
   }
 }
+
 .c-topmain {
+  @include mobile {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 45px;
+  }
   padding-bottom: 100px;
   &__text {
     margin: auto;
@@ -44,6 +55,17 @@
     line-height: 29px;
     letter-spacing: 1.5px;
     line-height: 28px;
+    @include mobile {
+      height: auto;
+      font-size: 14px;
+    }
+  }
+}
+
+.subdirect.c-services__subdirect {
+  @include mobile {
+    width: 100%;
+    padding: 0px;
   }
 }
 
@@ -54,7 +76,11 @@
   letter-spacing: 2px;
 
   margin-bottom: 80px;
-
+  @include mobile {
+    flex-direction: column;
+    padding: 0px;
+    margin-bottom: 45px;
+  }
   &__text {
     margin-top: 23px;
     font-family: 'Noto Serif JP', serif;
@@ -62,15 +88,24 @@
     font-weight: 700;
     color: #004442;
     margin-bottom: 52px;
+    @include mobile {
+      font-size: 20px;
+    }
   }
   &__itemcen {
     margin: 0px 28px;
+    @include mobile {
+      margin: 0px;
+    }
   }
   &__item {
     position: relative;
+    @include mobile {
+      margin-bottom: 10px;
+    }
   }
   &__subdirect {
-    padding: 0px 106px !important;
+    padding: 0px 106px;
   }
 }
 .c-services__right {
@@ -105,6 +140,7 @@
     box-shadow: inset -90vw 0 0 0 #41c7af;
   }
 }
+
 .subdirect {
   position: relative;
   margin: auto;
@@ -118,6 +154,10 @@
   cursor: pointer;
   width: max-content;
   padding: 0px 127px;
+  @include mobile {
+    padding: 0px;
+    width: 100%;
+  }
   &:hover {
     opacity: 1;
     .subdirect__wrapicon {
@@ -134,6 +174,11 @@
     transform: translateY(-50%);
     height: 24px;
     transition: 1s;
+    @include mobile {
+      font-size: 12px;
+      height: 12px;
+      line-height: 12px;
+    }
   }
   &__text {
     line-height: 24px;
@@ -144,6 +189,11 @@
     font-size: 24px;
     color: white;
     font-weight: 700;
+    @include mobile {
+      font-size: 12px;
+      height: 12px;
+      line-height: 10px;
+    }
   }
 }
 
@@ -152,11 +202,21 @@
   background: #f6faf5;
   padding-top: 90px;
   padding-bottom: 100px;
+  @include mobile {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  &__direct {
+    padding: 0px 15px;
+  }
   &__item {
     position: relative;
     padding-top: calc(100% * (477 / 1366));
     height: 100%;
     min-height: 378px;
+    @include mobile {
+      padding: 0px;
+    }
   }
   &__item1 {
     margin-top: 84px;
@@ -174,6 +234,11 @@
     width: calc(100% * (771 / 1366));
     min-height: 378px;
     min-width: 610px;
+    @include mobile {
+      position: unset;
+      min-width: unset;
+      width: 100%;
+    }
   }
   &__detail {
     position: absolute;
@@ -186,6 +251,13 @@
     max-height: 100%;
     min-height: 378px;
     min-width: 545px;
+    @include mobile {
+      min-width: unset;
+      position: unset;
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
   &__title {
     font-family: 'Noto Serif JP', serif;
@@ -251,11 +323,19 @@
   &__wrapimg {
     width: 277px;
     height: 172px;
+    @include mobile {
+      margin: auto;
+    }
   }
   &__listbtn {
     display: flex;
     margin: 0px -5px;
     margin-top: 22px;
+    @include mobile {
+      width: max-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   &__btn {
     margin: 0px 5px;
@@ -273,6 +353,11 @@
     display: flex;
     margin-left: -2px;
     align-items: center;
+    @include mobile {
+      width: max-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   &__text {
     margin-left: 2px;
@@ -288,6 +373,14 @@
   }
   &__subdirect {
     margin-top: 73px;
+    @include mobile {
+      padding: 0px 15px;
+    }
+  }
+  &__item {
+    max-width: 90%;
+    margin: auto;
+    width: max-content;
   }
 }
 
@@ -328,6 +421,10 @@
 .c-condominium {
   background: #f6faf5;
   padding: 88px 82px 100px 82px;
+  @include mobile {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   &__list {
     display: flex;
     justify-content: space-between;
@@ -336,6 +433,9 @@
   &__wrapimg {
     width: 380px;
     height: 235px;
+    @include mobile {
+      max-width: 100%;
+    }
   }
   &__img {
     display: block;
@@ -408,6 +508,10 @@
 .c-faq {
   padding-top: 90px;
   padding-bottom: 100px;
+  @include table {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   &__listquest {
     margin-top: 60px;
     border: 2xp solid;
@@ -419,11 +523,23 @@
     max-width: 995px;
     margin-left: auto;
     margin-right: auto;
+    @include table {
+      width: unset;
+    }
+    @include mobile {
+      width: 100%;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
   }
   &__questitem {
     display: flex;
     width: max-content;
     align-items: center;
+    @include mobile {
+      max-width: 100%;
+      align-items: baseline;
+    }
   }
   &__wrapicon {
     margin-right: 10px;
@@ -431,10 +547,16 @@
     font-size: 24px;
     line-height: 24px;
     height: 24px;
+    @include mobile {
+      font-size: 16px;
+    }
   }
   &__wrapitem {
     width: max-content;
     margin: auto;
+    @include mobile {
+      max-width: 100%;
+    }
   }
   &__quest {
     color: #333333;
@@ -443,6 +565,14 @@
     font-family: 'Noto Sans JP', sans-serif;
     letter-spacing: 0.8px;
     line-height: 48px;
+    @include table {
+      font-size: 20px;
+    }
+    @include mobile {
+      font-size: 16px;
+      line-height: 29px;
+      height: auto;
+    }
   }
   &__subcontent {
     font-family: 'Noto Sans JP', sans-serif;
@@ -461,6 +591,9 @@
   padding-top: 90px;
   color: white;
   background: #004442;
+  @include mobile {
+    margin-bottom: 50px;
+  }
   &__wrapiconright {
     display: none;
   }
@@ -469,6 +602,10 @@
     padding: 0px 67px;
     margin-bottom: 100px;
     flex-wrap: wrap;
+    @include mobile {
+      padding: 0px 20px;
+      // flex-direction: column;
+    }
   }
   &__wrapmail {
     font-size: 24px;
@@ -476,6 +613,11 @@
     margin-right: 10px;
     height: 20px;
     line-height: 20px;
+    @include mobile {
+      font-size: 12px;
+      height: 12px;
+      line-height: 12px;
+    }
   }
   &__text {
     font-family: 'Noto Sans JP', sans-serif;
@@ -484,6 +626,11 @@
     font-weight: 700;
     height: 24px;
     margin-right: 10px;
+    @include mobile {
+      font-size: 12px;
+      height: 12px;
+      line-height: 12px;
+    }
   }
   &__subtext {
     font-family: 'Noto Sans JP', sans-serif;
@@ -492,6 +639,11 @@
     line-height: 16px;
     height: 16px;
     letter-spacing: 1px;
+    @include mobile {
+      font-size: 12px;
+      height: 12px;
+      line-height: 12px;
+    }
   }
   &__subslogan {
     color: white;
@@ -503,6 +655,11 @@
     padding: 0px;
     min-width: 400px;
     margin-top: 47px;
+    @include mobile {
+      min-width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
   }
   &__subdirect2 {
     flex: 1;
@@ -510,6 +667,11 @@
     margin: 0px 16px;
     margin-top: 47px;
     min-width: 400px;
+    @include mobile {
+      min-width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
 
     background-image: linear-gradient(to right, #ffffff, #e3dfb9);
   }
@@ -532,6 +694,17 @@
     font-size: 18px;
     font-weight: 700;
     font-family: 'Noto Sans JP', sans-serif;
+    @include table {
+      font-size: 11px;
+    }
+    @include mobile {
+      flex-direction: column;
+      padding-top: 20px;
+      margin-bottom: 50px;
+      padding-bottom: 20px;
+      height: 178px;
+      justify-content: space-between;
+    }
   }
   &__imglogo {
     display: block;
@@ -544,14 +717,30 @@
     width: 228px;
     height: 34px;
     margin-right: 63px;
+    @include table {
+      margin-right: 30px;
+    }
   }
   &__navitem {
     margin-right: 28px;
     letter-spacing: 1px;
     color: white;
+    @include table {
+      margin-right: 10px;
+    }
   }
   &__signature {
     margin-left: auto;
     letter-spacing: 0.7px;
+    @include mobile {
+      margin-right: auto;
+    }
+  }
+}
+
+div#c-voicemain__listdot {
+  @include mobile {
+    flex: 1;
+    max-width: 100px;
   }
 }

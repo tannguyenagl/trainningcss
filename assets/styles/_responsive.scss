@@ -1,0 +1,14 @@
+$mobile-width: 750px;
+$table-width: 1264px;
+
+@mixin table {
+  @media (max-width: #{$table-width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
